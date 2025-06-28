@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1 class="quiz-title">Javascript Quiz</h1>
+        </div>
+        
+        <div id="quiz-content">
+            <div class="progress-info">
+                <span id="question-progress">Question 1 of 5</span>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-text" id="question-text">
+                    What does 'DOM' stand for in JavaScript?
+                </div>
+                
+                <div class="options-grid" id="options-container">
+                    <!-- Option buttons inserted by JS -->
+                </div>
+                
+                <div id="feedback" class="feedback" style="display: none;"></div>
+                
+                <button class="next-btn" id="next-btn" onclick="nextQuestion()" disabled>
+                    Next Question
+                </button>
+            </div>
+        </div>
+        
+        <div id="result-container" class="result-container" style="display: none;">
+            <h2 class="result-title">Quiz Complete!</h2>
+            <div class="score-display" id="final-score">Your Score: 0/5</div>
+            <div class="percentage-display" id="final-percentage">Percentage: 0%</div>
+            <button class="restart-btn" onclick="restartQuiz()">Take Quiz Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
